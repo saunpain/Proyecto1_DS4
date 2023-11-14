@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&family=Raleway&family=Roboto:wght@500&display=swap');
+
+$verde-oscurito: #18561E;
+$verde-clarito: #237C2C;
+$blanco-gris: #F6F6F6;
+$gris-clarito: #777777;
+$blanco: #FFFFFF;
+$gris-oscurito: #444444;
+
+$titulo: 'Roboto', sans-serif;
+$subtitulo: 'Montserrat', sans-serif;
+$parrafo: 'Raleway', sans-serif;
+
+*{
+    color: $blanco;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.side-bar{
+    background: $verde-oscurito;
+    height: 100%;
+    width: 300px;
+    margin: 0;
+
+    .seccion-usuario{
+
+        img{
+            width: 10px;
+            height: auto;
+        }
+    }
+}
