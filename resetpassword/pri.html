@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Password reset</title>
+</head>
+
+<body>
+    <header>
+        <div id="header-contenido">
+            <img id="fisc" src="img/logo-fisc.png" alt="">
+            <h1 id="title">UTP</h1>
+            <nav>
+                <a id="principal" href="#"> Página principal</a>
+                <p id="mas">Más</p>
+                <img id="mas_icon" src="img/FlechaAbajo.png" alt="">
+            </nav>
+        </div>
+    </header>
+
+    <section class="fondoxd">
+        <div class="cuadroxd">
+            <h2>Restablecer contraseña</h2>
+            <div class="cuadro2">
+                <form action="/resetpassword" method="post">
+                    <div class="form-group">
+                        <label for="newpassword">Nueva contraseña</label>
+                        <input type="password" class="form-control" id="newpassword" placeholder="Nueva contraseña"
+                            name="newpassword" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="confirmpassword"
+                            placeholder="Repetir contraseña" name="confirmpassword" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Restablecer Contraseña</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="info-footer">
+                    <img src="https://github.com/saunpain/Proyecto1_DS4/blob/main/img/Logo%20UTP%20Blanco.png?raw=true"
+                        alt="logo utp blanco">
+                    <p>Este sitio es administrado por la <br>
+                        Dirección de Innovación y Tecnología <br>
+                        Educativa (DIGITED), de la <br>
+                        Universidad Tecnológica de Panamá <br>
+                        (UTP).
+                    </p>
+                </div>
+                <div class="contacto">
+                    <h1>Contacto</h1>
+                    <p>Avenida Universidad Tecnológica de Panamá, Vía Puente <br>
+                        Centenario, Campus Metropolitano Dr. Victor Levi Sasso, <br>
+                        Edificio No.3, tercer piso. <br>
+                        Teléfono: (507) 560-3639 y (507) 560-3619 <br>
+                        E-mail: soporte.digited@utp.ac.pa
+                    </p>
+                </div>
+                <div class="redes">
+                    <img src="https://github.com/saunpain/Proyecto1_DS4/blob/main/img/img_docente/facebook.png?raw=true"
+                        alt="facebook">
+                    <img src="https://github.com/saunpain/Proyecto1_DS4/blob/main/img/img_docente/instagram.png?raw=true"
+                        alt="instagram">
+                    <img src="https://github.com/saunpain/Proyecto1_DS4/blob/main/img/img_docente/youtube.png?raw=true"
+                        alt="youtube">
+                    <img src="https://github.com/saunpain/Proyecto1_DS4/blob/main/img/img_docente/Linkedin.png?raw=true"
+                        alt="linkedin">
+                    <img src="https://github.com/saunpain/Proyecto1_DS4/blob/main/img/img_docente/twitter.png?raw=true"
+                        alt="twitter x">
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 - Universidad Tecnológica de Panamá</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

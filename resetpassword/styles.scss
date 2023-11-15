@@ -1,0 +1,217 @@
+//Variables
+$verde-oscurito: #18561E;
+$verde-clarito: #237C2C;
+$blanco-gris: #F6F6F6;
+$gris-clarito: #777777;
+$blanco: #FFFFFF;
+$gris-oscurito: #444444;
+$negro: #000000;
+$titulo: 'Roboto', sans-serif;
+$subtitulo: 'Montserrat', sans-serif;
+$parrafo: 'Raleway', sans-serif;
+$verde1: #237C2C;
+$verde2: #18561E;
+$blanco1: #FFFFFF;
+$blanco2: #F6F6F6;
+$gis1: #777777;
+$gris2: #444444;
+$subtitulo: 'Montserrat', sans-serif;
+$parrafo: 'Raleway', sans-serif;
+
+body {
+    display: grid;
+    background-position: center;
+    margin-bottom: 115px;
+    margin-top: 0px;
+    height: 500px;
+
+    .fondoxd {
+        width: 100%;
+        height: 480px;
+        display: grid;
+        place-items: center;
+        background-image: url('image\ 27.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .cuadroxd {
+        color: $blanco;
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+        font-size: 22px;
+        font-family: $titulo;
+    }
+
+    .cuadro2 {
+        background-color: $blanco;
+        width: 335px;
+        height: 290px;
+        padding: 30px;
+        margin: 0;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+        color: $negro;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 20px;
+
+        .form-group {
+            margin-bottom: 4%;
+            color: $negro;
+            margin-top: 20px;
+            font-family: $subtitulo;
+        }
+
+        .form-control {
+            padding: 10px 12px;
+            margin: 15px;
+            border: 1px solid $gis1;
+            box-sizing: border-box;
+            border-radius: 2px;
+            width: 65%;
+            border: 1px solid $negro;
+            margin-bottom: 1px;
+        }
+
+        .btn {
+            background-color: $verde-oscurito;
+            color: $blanco;
+            padding: 20px 40px;
+            border: none;
+            cursor: pointer;
+            width: 65%;
+            font-size: 16px;
+            border-radius: 10px;
+            margin-top: 2%;
+            transition-duration: 0.4s;
+        }
+
+        .btn:hover {
+            background-color: $verde-clarito;
+        }
+    }
+
+}
+
+.footer-container {
+    font-family: 'Raleway', sans-serif;
+    background: $gris-oscurito;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .footer {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        padding-top: 30px;
+
+        .info-footer {
+            color: $blanco;
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 100px;
+                width: 100px;
+                margin-right: 30px;
+            }
+        }
+
+        .contacto {
+            color: $blanco;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 1rem;
+                margin: 0;
+            }
+
+            p {
+                margin-top: 0;
+            }
+        }
+
+        .redes {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                height: 30px;
+                width: 30px;
+                padding: 10px;
+            }
+        }
+    }
+
+    .copyright {
+
+        p {
+            color: $blanco
+        }
+    }
+}
+
+header {
+    background-color: $verde2;
+    #header-contenido {
+        display: flex;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+    #title {
+        font-size: 3.7rem;
+        color: #FFFFFF;
+        position: relative;
+        font-family: 'ROBOTO', sans-serif;
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
+    }
+
+    #fisc {
+        z-index: 1;
+        width: 7rem;
+        height: 7rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        margin-left: 30rem;
+
+
+        #principal {
+            font-family: $subtitulo;
+            font-size: 1.2rem;
+            color: $blanco1;
+            text-decoration: none;
+        }
+
+        #mas {
+            margin-left: 1.5rem;
+            font-family: $subtitulo;
+            font-size: 1.2rem;
+            color: $blanco1;
+
+        }
+
+        #mas_icon {
+            margin-left: 0.5rem;
+            width: 1.2rem;
+        }
+    }
+}
