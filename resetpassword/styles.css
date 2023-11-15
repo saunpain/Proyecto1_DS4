@@ -10,7 +10,7 @@ body .fondoxd {
   height: 480px;
   display: grid;
   place-items: center;
-  background-image: url("https://github.com/saunpain/Proyecto1_DS4/blob/main/resetpassword/img/image%2027.png");
+  background-image: url("img/image\ 27.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
