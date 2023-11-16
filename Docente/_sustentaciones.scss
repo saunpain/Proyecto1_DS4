@@ -13,6 +13,8 @@ $parrafo: 'Raleway', sans-serif;
 .contenedor-ps{
     h1{
         font-family: $titulo;
+        font-weight: 300;
+        width: 300px;
     }
 }
 
@@ -58,17 +60,12 @@ $parrafo: 'Raleway', sans-serif;
     td{
             padding: 6px;
     }
-
+    
     .fecha:hover{
         color: $blanco;
         background:$verde-clarito;
         outline: 2px solid $negro;
         cursor: pointer;
-    }
-
-    #elegido{
-        background-color: $verde-clarito;
-        color:$blanco;
     }
 }
 

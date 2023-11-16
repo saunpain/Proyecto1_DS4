@@ -7,63 +7,78 @@
 .contenedor-pa h1 {
   font-size: 3rem;
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
   margin-left: 1.5rem;
 }
 .contenedor-pa input {
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
   border: 1px solid #FFFFFF;
-  margin-left: 60px;
+  margin-left: 20px;
   margin-right: 20px;
   padding: 5px 400px 5px 10px;
-  border-radius: 3px;
+  border-radius: 9px;
 }
-.contenedor-pa buscar button {
-  border-radius: 5px;
-  background-color: #18561E;
+.contenedor-pa .encabezado {
+  display: flex;
+  flex-direction: column;
+}
+.contenedor-pa .encabezado .busqueda {
+  display: flex;
+}
+.contenedor-pa .encabezado .busqueda .boton-buscar {
+  display: flex;
+  background: #18561E;
+  width: 160px;
+  height: 35px;
+  margin: 1px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+.contenedor-pa .encabezado .busqueda .boton-buscar button {
   color: #FFFFFF;
-  padding: 5px 40px;
+  border-style: none;
+  background: none;
 }
-
-.tabla_pa {
+.contenedor-pa .tabla_pa {
   margin: 20px 10px 40px;
 }
-
-.tabla-titulo {
+.contenedor-pa .tabla-titulo {
   border-collapse: collapse;
   box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3); /* Sombras más ligera con rgba() */
   height: auto;
 }
-.tabla-titulo th {
+.contenedor-pa .tabla-titulo th {
   background-color: #18561E;
   font-family: "Roboto", sans-serif;
   color: #FFFFFF;
   padding: 10px;
 }
-.tabla-titulo tr {
+.contenedor-pa .tabla-titulo tr {
   font-family: "Montserrat", sans-serif;
   background-color: #FFFFFF;
 }
-.tabla-titulo td {
+.contenedor-pa .tabla-titulo td {
   width: auto;
   padding: 25px;
 }
-.tabla-titulo span {
+.contenedor-pa .tabla-titulo span {
   width: 30px;
 }
-.tabla-titulo .borde-sustentacion {
+.contenedor-pa .tabla-titulo .borde-sustentacion {
   background-color: #237C2C;
   color: #FFFFFF;
   border: 20px solid #237C2C;
   border-radius: 5px;
 }
-.tabla-titulo .borde-evaluacion {
+.contenedor-pa .tabla-titulo .borde-evaluacion {
   background-color: #444444;
   color: #FFFFFF;
   border: 20px solid #444444;
   padding: 0px 9px;
   border-radius: 5px;
 }
-.tabla-titulo .borde-aprobacion {
+.contenedor-pa .tabla-titulo .borde-aprobacion {
   background-color: #777777;
   color: #FFFFFF;
   border: 20px solid #777777;
@@ -73,6 +88,8 @@
 
 .contenedor-ps h1 {
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  width: 300px;
 }
 
 .cuadrito-blanco {
@@ -121,10 +138,6 @@
   background: #237C2C;
   outline: 2px solid #000000;
   cursor: pointer;
-}
-.calendario #elegido {
-  background-color: #237C2C;
-  color: #FFFFFF;
 }
 
 .cuadrito-sustentacion {
