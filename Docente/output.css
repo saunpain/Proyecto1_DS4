@@ -1,22 +1,298 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&family=Raleway&family=Roboto:wght@500&display=swap");
-* {
+.contenedor-pa {
+  height: 1000px;
+  width: 800px;
+}
+.contenedor-pa h1 {
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+  margin-left: 1.5rem;
+}
+.contenedor-pa input {
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #FFFFFF;
+  margin-left: 60px;
+  margin-right: 20px;
+  padding: 5px 400px 5px 10px;
+  border-radius: 3px;
+}
+.contenedor-pa buscar button {
+  border-radius: 5px;
+  background-color: #18561E;
   color: #FFFFFF;
+  padding: 5px 40px;
+}
+
+.tabla_pa {
+  margin: 20px 10px 40px;
+}
+
+.tabla-titulo {
+  border-collapse: collapse;
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3); /* Sombras más ligera con rgba() */
+  height: auto;
+}
+.tabla-titulo th {
+  background-color: #18561E;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  padding: 10px;
+}
+.tabla-titulo tr {
+  font-family: "Montserrat", sans-serif;
+  background-color: #FFFFFF;
+}
+.tabla-titulo td {
+  width: auto;
+  padding: 25px;
+}
+.tabla-titulo span {
+  width: 30px;
+}
+.tabla-titulo .borde-sustentacion {
+  background-color: #237C2C;
+  color: #FFFFFF;
+  border: 20px solid #237C2C;
+  border-radius: 5px;
+}
+.tabla-titulo .borde-evaluacion {
+  background-color: #444444;
+  color: #FFFFFF;
+  border: 20px solid #444444;
+  padding: 0px 9px;
+  border-radius: 5px;
+}
+.tabla-titulo .borde-aprobacion {
+  background-color: #777777;
+  color: #FFFFFF;
+  border: 20px solid #777777;
+  padding: 0px 7px;
+  border-radius: 5px;
+}
+
+.contenedor-ps h1 {
   font-family: "Roboto", sans-serif;
 }
 
-body {
+.cuadrito-blanco {
+  height: 111vh;
+  width: 270px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#titulo-calendario h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  width: 100px;
+  display: inline;
+  padding-left: 19px;
+}
+#titulo-calendario span {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  padding-left: 45px;
+}
+#titulo-calendario span:hover {
+  cursor: pointer;
+}
+
+.calendario {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  width: 270px;
+  padding: 15px;
+}
+.calendario th {
+  padding: 3px;
+}
+.calendario td {
+  padding: 6px;
+}
+.calendario .fecha:hover {
+  color: #FFFFFF;
+  background: #237C2C;
+  outline: 2px solid #000000;
+  cursor: pointer;
+}
+.calendario #elegido {
+  background-color: #237C2C;
+  color: #FFFFFF;
+}
+
+.cuadrito-sustentacion {
+  display: flex;
+  margin-top: 20px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  padding: 30px 0;
+}
+.cuadrito-sustentacion .img-container {
+  align-items: flex-start;
+}
+.cuadrito-sustentacion .img-container img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+.cuadrito-sustentacion .texto-container {
+  align-items: flex-end;
+}
+.cuadrito-sustentacion .texto-container p {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  margin-left: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: black;
+}
+.cuadrito-sustentacion .texto-container .textito-2 {
+  margin-top: 0;
+}
+.cuadrito-sustentacion .texto-container .textito-2 p {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  color: #444444;
+}
+
+.footer-container {
+  font-family: "Raleway", sans-serif;
+  background: #444444;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-container .footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+.footer-container .footer .info-footer {
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+.footer-container .footer .info-footer img {
+  height: 100px;
+  width: 100px;
+  margin-right: 30px;
+}
+.footer-container .footer .contacto {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-container .footer .contacto h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
   margin: 0;
+}
+.footer-container .footer .contacto p {
+  margin-top: 0;
+}
+.footer-container .footer .redes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-container .footer .redes img {
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+}
+.footer-container .copyright p {
+  color: #FFFFFF;
+}
+
+body {
+  background: #F6F6F6;
+  margin: 0;
+}
+
+.contenedor-body {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  justify-content: space-between;
 }
 
 .side-bar {
   background: #18561E;
-  height: 100%;
+  margin: 0;
   width: 300px;
+}
+.side-bar .seccion-usuario {
+  color: #000000;
+  background: #FFFFFF;
+  height: 150px;
+  position: relative;
+  top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.side-bar .seccion-usuario .textito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.side-bar .seccion-usuario h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.side-bar .seccion-usuario h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
   margin: 0;
 }
 .side-bar .seccion-usuario img {
-  width: 10px;
-  height: auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.side-bar .seccion-perfil {
+  color: #FFFFFF;
+  display: flex;
+  margin-top: 70px;
+  align-items: center;
+}
+.side-bar .seccion-perfil p {
+  font-family: "Raleway", sans-serif;
+}
+.side-bar .seccion-perfil img {
+  margin: 25px;
+  width: 25px;
+  height: 25px;
+}
+.side-bar .seccion-proyectos {
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+.side-bar .seccion-proyectos p {
+  font-family: "Raleway", sans-serif;
+}
+.side-bar .seccion-proyectos img {
+  width: 25px;
+  height: 25px;
+  margin: 25px;
 }
 
 /*# sourceMappingURL=output.css.map */

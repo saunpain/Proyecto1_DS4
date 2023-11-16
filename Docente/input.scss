@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&family=Raleway&family=Roboto:wght@500&display=swap');
+@use 'tablas';
+@use 'sustentaciones';
+@use 'footer';
 
 $verde-oscurito: #18561E;
 $verde-clarito: #237C2C;
@@ -6,31 +8,103 @@ $blanco-gris: #F6F6F6;
 $gris-clarito: #777777;
 $blanco: #FFFFFF;
 $gris-oscurito: #444444;
+$negro: #000000;
 
 $titulo: 'Roboto', sans-serif;
 $subtitulo: 'Montserrat', sans-serif;
 $parrafo: 'Raleway', sans-serif;
 
-*{
-    color: $blanco;
-    font-family: 'Roboto', sans-serif;
+body{
+    background: $blanco-gris;
+    margin: 0;
 }
 
-body{
-    margin: 0;
+.contenedor-body{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    justify-content: space-between;
 }
 
 .side-bar{
     background: $verde-oscurito;
-    height: 100%;
-    width: 300px;
     margin: 0;
+    width: 300px;
 
     .seccion-usuario{
 
+        color: $negro;
+        background: $blanco;
+        height: 150px;
+        position: relative;
+        top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .textito{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        h1{
+            font-family: $subtitulo;
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        h2{
+            font-family: $parrafo;
+            font-size: 0.8rem;
+            margin: 0;
+        }
+
         img{
-            width: 10px;
-            height: auto;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    }
+
+    .seccion-perfil{
+        color: $blanco;
+        display: flex;
+        margin-top: 70px;
+        align-items: center;
+
+        p{
+            font-family: $parrafo;
+        }
+
+        img{
+            margin: 25px;
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .seccion-proyectos{
+        color: $blanco;
+        display: flex;
+        align-items: center;
+
+        p{
+            font-family: $parrafo;
+        }
+
+        img{
+            width: 25px;
+            height: 25px;
+            margin: 25px;
         }
     }
 }
+
+
+
+
+

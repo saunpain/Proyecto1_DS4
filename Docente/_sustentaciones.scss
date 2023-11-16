@@ -1,0 +1,109 @@
+$verde-oscurito: #18561E;
+$verde-clarito: #237C2C;
+$blanco-gris: #F6F6F6;
+$gris-clarito: #777777;
+$blanco: #FFFFFF;
+$gris-oscurito: #444444;
+$negro: #000000;
+
+$titulo: 'Roboto', sans-serif;
+$subtitulo: 'Montserrat', sans-serif;
+$parrafo: 'Raleway', sans-serif;
+
+.contenedor-ps{
+    h1{
+        font-family: $titulo;
+    }
+}
+
+.cuadrito-blanco{
+    height: 111vh;
+    width: 270px;
+    background-color: $blanco;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#titulo-calendario{
+    h2{
+        font-family: $subtitulo;
+        font-size: 20px;
+        width: 100px;
+        display: inline;
+        padding-left: 19px;
+    }
+    span{
+        display: inline-block;
+        font-family: $parrafo;
+        font-weight: bolder;
+        font-size: 30px;
+        padding-left: 45px;
+    }
+    span:hover{
+        cursor: pointer;
+    }
+}
+
+.calendario{
+    font-family: $parrafo;
+    text-align: center;
+    width: 270px;
+    padding: 15px;
+    th{
+        padding: 3px;
+    }
+    td{
+            padding: 6px;
+    }
+
+    .fecha:hover{
+        color: $blanco;
+        background:$verde-clarito;
+        outline: 2px solid $negro;
+        cursor: pointer;
+    }
+
+    #elegido{
+        background-color: $verde-clarito;
+        color:$blanco;
+    }
+}
+
+.cuadrito-sustentacion{
+    display: flex;
+    margin-top: 20px;
+    border-top: 1px solid $negro;
+    border-bottom: 1px solid $negro;
+    padding: 30px 0;
+    .img-container{
+        align-items: flex-start;
+        img{
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            margin-right: 10px;
+        }
+    }
+    .texto-container{
+        align-items: flex-end;
+        p{
+            font-size: 16px;
+            font-family: $parrafo;
+            margin-left: 15px;
+            margin-top: 0;
+            margin-bottom: 0;
+            color:black
+        }
+        .textito-2{
+            margin-top: 0;
+            p{
+                font-size: 14px;
+                font-family: $parrafo;
+                color: $gris-oscurito;
+            }
+        }
+    }
+}
